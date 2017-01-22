@@ -9,8 +9,7 @@
 
     .mask {
       position: absolute;
-      display: flex;
-      align-items: center;
+
       top: 0;
       left: 0;
       background-color: rgba(0,0,0,0.4);
@@ -20,6 +19,7 @@
       .title {
         font-size: 2em;
         color: #f1ebe5;
+        line-height: 100px;
         text-shadow: 0 8px 9px #c4b59d, 0 -2px 1px #fff;
         font-weight: bold;
         letter-spacing: -4px;

@@ -7,8 +7,6 @@ require('../index.html');
 require('../static/js/zepto.js');
 require('../static/js/sm.js');
 require('../static/css/sm.css');
-/* eslint-disable no-new */
-alert('bindEvents');
 var app = {
   initialize: function() {
     this.bindEvents();
