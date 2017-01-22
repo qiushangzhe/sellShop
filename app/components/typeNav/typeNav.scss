@@ -1,35 +1,77 @@
 .type-nav {
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  .list {
-    padding: 0;
-    list-style: none;
-    height: 50px;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    a{
-        color: #b9b9b9;
+    position: relative;
+    overflow:hidden;
+    ul {
+        margin: 0;
+        padding: 0;
     }
-  }
 
-  .active {
-    background-color: #3bc69c;
-    a{
-        color: #fff;
+    .list {
+        padding: 0;
+        list-style: none;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        float:left;
+        width:90%;
+        border-right:1px solid #ddd;
+        font-size:14px;
+        li {
+            padding: 5px 16px;
+            display: inline-block;
+            a {
+                color: #b9b9b9;
+            }
+        }
+        .active {
+            background-color: #3bc69c;
+            a {
+                color: #fff;
+            }
+        }
     }
-  }
+    .search {
+        position: absolute;
+        width:10%;
+        top: 0;
+        &:before{
+            position:absolute;
+            top:50%;
+            left:50%;
+            font-size:14px;
+            transform: translate(-50%,26%);
+            color:#3bc69c;
+        }
+    }
 
-  li {
-    padding: 5px 10px;
-    display: inline-block;
-  }
-  /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
-  ::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-  }
+
+    /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+    ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    //最新 最火
+    .childType{
+        width:100%;
+        height:30px;
+        clear:both;
+        border-top:1px solid #ddd;
+        border-bottom:1px solid #ddd;
+        li{
+            float:left;
+            width:50%;
+            font-size: 6px;
+            line-height: 30px;
+            text-align: center;
+            a{
+                color: #b9b9b9;
+                border-bottom:2px solid translate;
+                &.choose{
+                    color: #3bc69c;
+                    border-bottom:2px solid #3bc69c;
+                    padding-bottom:5px;
+                }
+            }
+        }
+    }
 }

@@ -3,6 +3,10 @@
         <li v-for='(item,index) in navData' :class="{active:index == num}" v-on:click="chooseType(index)">
             <a :href="item.link">{{item.title}}</a>
         </li>
-        <li class="icon icon-search" v-on:click="searchShop()"></li>
+    </ul>
+    <span class="icon icon-search search" v-on:click="searchShop()"></span>
+    <ul class="childType">
+        <li v-on:click="childTypeClick(0)"><a :class="{choose:childTyle==0}">最新</a></li>
+        <li v-on:click="childTypeClick(1)"><a :class="{choose:childTyle==1}">最火</a></li>
     </ul>
 </nav>
