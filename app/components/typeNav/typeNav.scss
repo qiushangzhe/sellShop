@@ -1,0 +1,35 @@
+.type-nav {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .list {
+    padding: 0;
+    list-style: none;
+    height: 50px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    a{
+        color: #b9b9b9;
+    }
+  }
+
+  .active {
+    background-color: #3bc69c;
+    a{
+        color: #fff;
+    }
+  }
+
+  li {
+    padding: 5px 10px;
+    display: inline-block;
+  }
+  /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+}

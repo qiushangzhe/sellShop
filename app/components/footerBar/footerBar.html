@@ -1,0 +1,6 @@
+<nav class="bar bar-tab sell-footer">
+    <a v-for='(item,index) in navData' :class="{active:index == num}" class="tab-item external" :href="item.link">
+      <span class="icon" :class="item.icon"></span>
+      <span class="tab-label">{{item.title}}</span>
+    </a>
+</nav>

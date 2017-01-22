@@ -1,0 +1,9 @@
+/node_modules
+/dist
+npm-debug.log
+.idea
+.sass-cache
+.tmp
+.DS_Store
+.gulp
+dep2dev.sh

@@ -1,0 +1,8 @@
+<nav class="type-nav">
+    <ul class="list">
+        <li v-for='(item,index) in navData' :class="{active:index == num}" v-on:click="chooseType(index)">
+            <a :href="item.link">{{item.title}}</a>
+        </li>
+        <li class="icon icon-search" v-on:click="searchShop()"></li>
+    </ul>
+</nav>
