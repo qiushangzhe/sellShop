@@ -1,0 +1,4 @@
+- ui使用的是 http://m.sui.taobao.org/
+- 使用了vue2.0 vue-router
+- cordova地址：
+- https://cordova.apache.org/docs/en/latest/guide/cli/index.html
