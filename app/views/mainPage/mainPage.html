@@ -1,10 +1,21 @@
-<div class="mainPage">
-  <header>
-    <img src="../../../static/img/banner.png">
-    <div class="mask">
-      <p class="title">二手交易市场</p>
+<div class="mainPage content">
+    <header class="main-page-header">
+        <img src="../../../static/img/banner.png">
+        <div class="mask">
+            <p class="title">二手交易市场</p>
+        </div>
+    </header>
+    <type-nav></type-nav>
+    <div class="shopList ">
+        <shop-card :shopObjData="testList[0]"></shop-card>
+        <shop-card :shopObjData="testList[0]"></shop-card>
+        <shop-card :shopObjData="testList[0]"></shop-card>
     </div>
-  </header>
-  <type-nav></type-nav>
-  <footer-bar activeNum="0"></footer-bar>
+    <div class="moreTag icon icon-down">
+        点击加载更多
+    </div>
+    <div class="other ">
+        qqqq提供技术支持
+    </div>
+    <footer-bar activeNum="0"></footer-bar>
 </div>

@@ -1,0 +1,106 @@
+.shop-card{
+    background-color: #fff;
+    margin-bottom:10px;
+
+    header.shop-card-header{
+        overflow: hidden;
+        height:50px;
+        padding:5px 0;
+        .headImgBox{
+            position:relative;
+            float:left;
+            width:20%;
+            height:100%;
+            text-align: center;
+            vertical-align: middle;
+            img{
+                width:40px;
+                height:40px;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                border-radius: 25px;
+            }
+        }
+        .centerBox{
+            float:left;
+            width:60%;
+            p.centerTitle{
+                font-size:20px;
+                color:#4a4646;
+            }
+            .centerOther{
+                span{
+                    font-size:13px;
+                    color:#a9a9a9;
+                }
+                .shoperName{
+
+                }
+                .sex{
+
+                }
+                .date{
+
+                }
+            }
+        }
+        .rightBox{
+            float:left;
+            width:20%;
+            font-size:14px;
+            line-height: 20px;
+            text-align: center;
+            .nowCost{
+                background-color:#f8f0ee;
+                color:#3ec59c;
+
+            }
+        }
+    }
+    .shop-card-mainBox{
+        margin-left:20%;
+        .shopPicList{
+            img{
+                width:100px;
+                height:100px;
+            }
+        }
+        .shopIntro{
+            font-size:13px;
+            padding:5px 2px;
+        }
+        border-bottom:1px solid #ddd;
+    }
+    footer.shop-card-footer{
+        margin-left:20%;
+        overflow: hidden;
+        .watchNum{
+            float:left;
+            padding:10px 0;
+            font-size:13px;
+            color:#868686;
+        }
+        .goodTime{
+            float:right;
+            border:1px solid #ddd;
+            border-radius: 5px;
+            width:50px;
+            height:25px;
+            text-align: center;
+            line-height: 25px;
+            font-size:13px;
+            margin-right:10px;
+            margin-top:4px;
+            background-image: url('../../../static/img/zan.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-left:20px;
+            background-position: 3px center;
+            &:hover{
+                color:#3bc69c;
+            }
+        }
+    }
+}

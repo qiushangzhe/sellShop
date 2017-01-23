@@ -1,0 +1,35 @@
+<div class="shop-card">
+    <!--头部-->
+    <header class="shop-card-header">
+        <div class="headImgBox">
+            <img :src="shopObj.shoperHeader" alt="一个头像">
+        </div>
+        <div class="centerBox">
+            <p class="centerTitle">{{shopObj.shopName}}</p>
+            <p class="centerOther">
+                <span class="shoperName">{{shopObj.shoperName}}</span>
+                <span class="sex">{{shopObj.sex == 0 ? '女' : '男'}}</span>
+                <span class="date">{{shopObj.publishData}}</span>
+            </p>
+        </div>
+        <div class="rightBox">
+            <p class="nowCost">{{shopObj.nowCost}}元</p>
+            <p class="originalCost"><s>{{shopObj.originalCost}}元</s></p>
+        </div>
+    </header>
+    <!--mainBox-->
+    <div class="shop-card-mainBox">
+        <!--商品图片列表-->
+        <div class="shopPicList">
+            <img v-for="item in shopObj.shopPic" :src="item" alt="商品图">
+        </div>
+        <!--商品介绍-->
+        <div class="shopIntro">
+            {{shopObj.shopIntroduct}}
+        </div>
+    </div>
+    <footer class="shop-card-footer">
+        <p class="watchNum">浏览量:{{shopObj.watchNumber}}</p>
+        <p class="goodTime">{{shopObj.goodTime}}</p>
+    </footer>
+</div>

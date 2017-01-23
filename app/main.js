@@ -6,8 +6,8 @@ import routes from './router';
 require('../index.html');
 require('../static/js/zepto.js');
 require('../static/js/sm.js');
-require('../static/css/common.css');
 require('../static/css/sm.css');
+require('../static/css/common.css');
 var app = {
   initialize: function() {
     this.bindEvents();

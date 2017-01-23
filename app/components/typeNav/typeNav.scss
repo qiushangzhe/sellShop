@@ -1,12 +1,15 @@
 .type-nav {
+    background-color:#fff;
     position: relative;
     overflow:hidden;
+    font-weight: lighter;
     ul {
         margin: 0;
         padding: 0;
     }
 
     .list {
+        border-bottom:0;
         padding: 0;
         list-style: none;
         white-space: nowrap;
@@ -19,6 +22,7 @@
         li {
             padding: 5px 16px;
             display: inline-block;
+            border:none;
             a {
                 color: #b9b9b9;
             }
@@ -34,12 +38,13 @@
         position: absolute;
         width:10%;
         top: 0;
+        height:50%;
         &:before{
             position:absolute;
             top:50%;
             left:50%;
             font-size:14px;
-            transform: translate(-50%,26%);
+            transform: translate(-50%,-50%);
             color:#3bc69c;
         }
     }
@@ -55,13 +60,13 @@
         width:100%;
         height:30px;
         clear:both;
-        border-top:1px solid #ddd;
+            border-top:1px solid #ddd;
         border-bottom:1px solid #ddd;
         li{
             float:left;
             width:50%;
             font-size: 6px;
-            line-height: 30px;
+            line-height: 28px;
             text-align: center;
             a{
                 color: #b9b9b9;
@@ -69,7 +74,7 @@
                 &.choose{
                     color: #3bc69c;
                     border-bottom:2px solid #3bc69c;
-                    padding-bottom:5px;
+                    padding-bottom:3px;
                 }
             }
         }
