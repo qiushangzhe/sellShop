@@ -1,0 +1,34 @@
+{
+    "error": {
+        "code": 0,
+        "message": ""
+    },
+    "data": {
+        "shopList": [{
+            "shopName": "小米手环",
+            "shoperName": "邱上哲",
+            "shoperHeader": "static/img/header.jpg",
+            "originalCost": 100,
+            "nowCost": 74,
+            "sex": 1,
+            "publishData": "1月12日",
+            "shopPic": ["http://img5.imgtn.bdimg.com/it/u=752914689,194741300&fm=23&gp=0.jpg",
+            "http://img3.imgtn.bdimg.com/it/u=2150345141,2868780500&fm=23&gp=0.jpg"],
+            "shopIntroduct": "新买的小米手环，一次没用过。现在出售",
+            "watchNumber": 12,
+            "goodTime": 3
+        },{
+            "shopName": "水杯",
+            "shoperName": "李小莲",
+            "shoperHeader": "https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/image/h%3D200/sign=758b33e74e10b912a0c1f1fef3fcfcb5/8326cffc1e178a82019b0bfcff03738da877e8c3.jpg",
+            "originalCost": 200,
+            "nowCost": 180,
+            "sex": 0,
+            "publishData": "7月2日",
+            "shopPic": ["static/img/waterCup.png"],
+            "shopIntroduct": "这是一个可爱的水杯，可以喝水，可以保温，可以防身，18k镀金保温杯。",
+            "watchNumber": 5555,
+            "goodTime": 233
+        }]
+    }
+}

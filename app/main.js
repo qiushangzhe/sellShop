@@ -2,12 +2,14 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import VueResource from 'vue-resource';
 import routes from './router';
 require('../index.html');
 require('../static/js/zepto.js');
 require('../static/js/sm.js');
 require('../static/css/sm.css');
 require('../static/css/common.css');
+// require('../static/data/shoplist.json');
 var app = {
   initialize: function() {
     this.bindEvents();
@@ -25,6 +27,7 @@ var app = {
   },
   setupVue: function() {
     Vue.use(VueRouter);
+    Vue.use(VueResource);
     var router = new VueRouter({
       base: __dirname,
       routes: routes

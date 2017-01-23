@@ -5,7 +5,7 @@ gulp.task('server',['webpack'], function() {
     // 从这个项目的根目录启动服务器
     browserSync.init({
         server: {
-            baseDir: ["./dist/"]
+            baseDir: ["./dist/","./"]
         }
     });
 
