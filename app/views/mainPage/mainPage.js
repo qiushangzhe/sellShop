@@ -14,11 +14,13 @@ export default {
     },
     methods: {
         init: function() {
-            this.$http.get('static/data/shoplist.json').then(function(res){
+            this.getShopList();
+        },
+        getShopList:function(){
+            this.$http.get('../../../static/data/shoplist.json').then(function(res){
                 res = res.data;
                 if(res.error.code == 0){
-                    console.log(res.data.shopList);
-                    this.shopList = res.data.shopList;
+                    this.shopList = this.shopList.concat(res.data.shopList);
                 }
             },function(err){
                 console.log(err);

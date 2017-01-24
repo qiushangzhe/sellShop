@@ -9,7 +9,6 @@ require('../static/js/zepto.js');
 require('../static/js/sm.js');
 require('../static/css/sm.css');
 require('../static/css/common.css');
-// require('../static/data/shoplist.json');
 var app = {
   initialize: function() {
     this.bindEvents();

@@ -1,7 +1,6 @@
 /node_modules
-/dist
 npm-debug.log
-.idea
+.idea\
 .sass-cache
 .tmp
 .DS_Store

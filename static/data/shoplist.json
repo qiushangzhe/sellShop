@@ -7,7 +7,7 @@
         "shopList": [{
             "shopName": "小米手环",
             "shoperName": "邱上哲",
-            "shoperHeader": "static/img/header.jpg",
+            "shoperHeader": "http://img5.imgtn.bdimg.com/it/u=752914689,194741300&fm=23&gp=0.jpg",
             "originalCost": 100,
             "nowCost": 74,
             "sex": 1,
@@ -25,7 +25,7 @@
             "nowCost": 180,
             "sex": 0,
             "publishData": "7月2日",
-            "shopPic": ["static/img/waterCup.png"],
+            "shopPic": ["http://img5.imgtn.bdimg.com/it/u=752914689,194741300&fm=23&gp=0.jpg"],
             "shopIntroduct": "这是一个可爱的水杯，可以喝水，可以保温，可以防身，18k镀金保温杯。",
             "watchNumber": 5555,
             "goodTime": 233

@@ -9,7 +9,7 @@
     <div class="shopList ">
         <shop-card v-for="item in shopList" :shopObjData="item"></shop-card>
     </div>
-    <div class="moreTag icon icon-down">
+    <div class="moreTag icon icon-down" v-on:click="getShopList()">
         点击加载更多
     </div>
     <div class="other ">
